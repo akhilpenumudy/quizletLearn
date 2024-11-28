@@ -1,8 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Q-Learn ⚡️
+
+Q-Learn is a free, open-source alternative to Quizlet's learning feature. It helps users learn and master question sets through an adaptive learning algorithm.
+
+## Features
+
+### 1. Question Set Management
+
+- **Import Questions**: Easily format and import question sets
+- **Community Sets**: Browse and use question sets created by other users
+- **Drag-and-Drop Carousel**: Interactive carousel showcasing recent community sets
+- **Set Preview**: Detailed view of question sets before starting to learn
+
+### 2. Adaptive Learning System
+
+- **Smart Question Selection**: Questions are presented in rounds, with focus on items that need more practice
+- **Mastery Tracking**: Questions are categorized as "mastered" or "pending" based on performance
+- **Round-Based Learning**: Questions are grouped into manageable rounds for effective learning
+- **Progress Visualization**: Clear visual feedback on learning progress
+
+### 3. User Experience
+
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
+- **Drag Interactions**: Intuitive touch and mouse drag interactions
+- **Real-time Feedback**: Immediate feedback on answer correctness
+- **Round Summaries**: Detailed summaries after each learning round
+
+## Data Science Concepts
+
+### 1. Spaced Repetition
+
+The app implements a simplified version of spaced repetition, a learning technique that incorporates increasing intervals of time between subsequent review of previously learned material.
+
+### 2. Adaptive Learning Algorithm
+
+- Questions are selected based on user performance
+- Correctly answered questions are moved to "mastered" status
+- Incorrect answers keep questions in the learning pool
+- Random selection within constraints ensures varied practice
+
+### 3. Learning Analytics
+
+- Tracks question mastery rates
+- Monitors user progress across rounds
+- Implements performance-based question selection
+
+## Tech Stack
+
+### Frontend
+
+- **Next.js 15**: React framework for production
+- **React 19**: UI component library
+- **TypeScript**: Type-safe JavaScript
+- **Tailwind CSS**: Utility-first CSS framework
+- **Shadcn/ui**: UI component library
+- **Lucide React**: Icon library
+
+### Backend & Database
+
+- **Supabase**: Backend as a Service
+  - Real-time database
+  - Row Level Security
+  - RESTful API
+
+### State Management
+
+- React Hooks
+- Local Storage for session persistence
+
+### Deployment
+
+- Vercel (recommended)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
 
 ```bash
 npm run dev
