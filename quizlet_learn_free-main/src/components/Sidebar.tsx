@@ -1,6 +1,13 @@
 "use client";
 
-import { Home, User, Settings, FolderPlus, Book } from "lucide-react";
+import {
+  Home,
+  User,
+  Settings,
+  FolderPlus,
+  Book,
+  LucideMessageCircleQuestion,
+} from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -12,8 +19,12 @@ import Link from "next/link";
 const mainSidebarItems = [
   { icon: Home, label: "Home", href: "/" },
   { icon: FolderPlus, label: "Import New Question Set", href: "/formatter" },
-  { icon: Book, label: "Your Old Sets", href: "/sets" },
-  { icon: Settings, label: "Settings", href: "/settings" },
+  { icon: Book, label: "Explore Community Sets", href: "/sets" },
+  {
+    icon: LucideMessageCircleQuestion,
+    label: "How do I use this?",
+    href: "/infopage",
+  },
 ];
 
 export function Sidebar() {
@@ -41,7 +52,7 @@ export function Sidebar() {
         </div>
 
         {/* Profile Icon with Initials */}
-        <div className="mt-auto pb-8">
+        {/* <div className="mt-auto pb-8">
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
@@ -55,7 +66,7 @@ export function Sidebar() {
               <p>Profile</p>
             </TooltipContent>
           </Tooltip>
-        </div>
+        </div> */}
       </aside>
     </TooltipProvider>
   );
